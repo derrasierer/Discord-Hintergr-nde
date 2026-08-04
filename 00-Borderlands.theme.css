@@ -1,24 +1,152 @@
 /**
- * @name Borderlands Collection
+ * @name Borderlands Collection (00 - master)
  * @version 1.0
- * @description Borderlands Background Switcher
+ * @description Central, flattened theme. Change --selected-bg at the top to switch images.
  */
 
-@import url("https://raw.githubusercontent.com/derrasierer/Discord-Hintergr-nde/main/Themes/Borderlands3DesignedHead.css");
+/* === Quick image selection (edit ONLY this line to change the background) === */
+:root{
+  --img_designed: url("https://raw.githubusercontent.com/derrasierer/Discord-Hintergr-nde/main/Pictures/Borderlands%203%20Designed%20Head.jpg");
+  --img_holding:  url("https://raw.githubusercontent.com/derrasierer/Discord-Hintergr-nde/main/Pictures/Borderlands%203%20Holding%20Head.jpg");
+  --img_load:     url("https://raw.githubusercontent.com/derrasierer/Discord-Hintergr-nde/main/Pictures/Borderlands%203%20Loadingscreen.jpg");
+  --img_mond:     url("https://raw.githubusercontent.com/derrasierer/Discord-Hintergr-nde/main/Pictures/Borderlands%204%20Mond.jpg");
+  --img_sirene:   url("https://raw.githubusercontent.com/derrasierer/Discord-Hintergr-nde/main/Pictures/Borderlands%204%20Sirene.jpg");
+  --img_cave:     url("https://raw.githubusercontent.com/derrasierer/Discord-Hintergr-nde/main/Pictures/Borderlands%20idk%20Cave.jpg");
 
-/* Alternativen — beschriftete Raw-Links (einfügen am Ende von 00-Borderlands.theme.css) */
-/*
---raw-designed-head:    "https://raw.githubusercontent.com/derrasierer/Discord-Hintergr-nde/main/Themes/Borderlands3DesignedHead.css";  Themes/Borderlands3DesignedHead.css 
---raw-holding-head:     "https://raw.githubusercontent.com/derrasierer/Discord-Hintergr-nde/main/Themes/Borderlands3HoldingHead.css";  Themes/Borderlands3HoldingHead.css
---raw-loadingscreen:    "https://raw.githubusercontent.com/derrasierer/Discord-Hintergr-nde/main/Themes/Borderlands3Loadingscreen.css";  Themes/Borderlands3Loadingscreen.css
---raw-mond:             "https://raw.githubusercontent.com/derrasierer/Discord-Hintergr-nde/main/Themes/Borderlands4Mond.css";  Themes/Borderlands4Mond.css
---raw-sirene:           "https://raw.githubusercontent.com/derrasierer/Discord-Hintergr-nde/main/Themes/Borderlands4Sirene.css";  Themes/Borderlands4Sirene.css
---raw-cave:             "https://raw.githubusercontent.com/derrasierer/Discord-Hintergr-nde/main/Themes/BorderlandsCave.css";  Themes/BorderlandsCave.css
-*/
+  /* Set selected background here (pick one of the vars above) */
+  --selected-bg: var(--img_holding);
 
-/* Hinweis:
-   - Diese Variablen sind nur eine dokumentierte Sammlung der Raw-URLs.
-   - @import kann Variablen nicht in URL() verwenden, daher sind die Links hier zur Übersicht/Dokumentation.
-   - Wenn du eine bestimmte Datei importieren willst, benutze direkt:
-     @import url("https://raw.githubusercontent.com/derrasierer/.../Datei.css");
-*/
+  /* Transparency overrides (feel free to tweak) */
+  --sidebar-color: hsl(0,0%,0%,0.16);
+  --main-content-color: hsl(0,0%,0%,0.08);
+  --card-color: hsl(0,0%,100%,0.02);
+  --card-color-hover: hsl(0,0%,100%,0.03);
+  --card-color-select: hsl(0,0%,100%,0.04);
+  --message-color: hsl(0,0%,0%,0.05);
+  --message-color-hover: hsl(0,0%,0%,0.08);
+  --popout-color: hsl(0,0%,0%,0.10);
+  --popout-blur: 5px;
+  --app-blur: 5px;
+}
+
+/* --- Begin Translucence base (flattened) --- */
+/**
+ * @name Translucence
+ * @version 2.0.0
+ */
+
+@import url(https://capnkitten.github.io/BetterDiscord/Themes/Translucence/css/source.css);
+
+:root {
+	/* APP ELEMENTS */
+	--app-blur: 6px;
+	--app-margin: 24px;
+	--app-radius: 8px;
+
+	/* ACCENT HSL AND TEXT COLOR SETTINGS */
+	--accent-hue: 260;
+    --accent-saturation: 83%;
+    --accent-lightness: 72%;
+	--accent-opacity: 0.8;
+	--accent-text-color: hsl(0,0%,0%);
+
+	/* SIDEBARS AND CHAT AREA COLOR SETTINGS */
+	--sidebar-color: hsl(0,0%,0%,0.34);
+	--main-content-color: hsl(0,0%,0%,0.27);
+
+	/* MESSAGE SETTINGS */
+	--message-color: hsl(0,0%,0%,0.19);
+    --message-color-hover: hsl(0,0%,0%,0.28);
+	--message-radius: 18px;
+	--message-padding-top: 8px;
+	--message-padding-side: 8px;
+
+	/* REPLY HSL COLOR SETTINGS */
+	--reply-hue: 328;
+    --reply-saturation: 79%;
+    --reply-lightness: 64%;
+	--reply-opacity: 1;
+
+	/* TEXTAREA SETTINGS */
+	--textarea-color: 255,255,255;
+    --textarea-alpha: 0.125;
+    --textarea-alpha-focus: 0.165;
+	--textarea-text-color: hsl(0,0%,100%);
+	--textarea-radius: 28px;
+
+	/* CARD SETTINGS */
+	--card-color: hsl(0,0%,100%,0.14);
+    --card-color-hover: hsl(0,0%,100%,0.18);
+    --card-color-select: hsl(0,0%,100%,0.21);
+	--card-radius: 18px;
+
+	/* BUTTON SETTINGS */
+	--button-height: 32px;
+	--button-padding: 16px;
+	--button-action-color: hsl(0,0%,0%);
+	--button-radius: 16px;
+
+	/* POPOUT SETTINGS */
+    --popout-color: hsl(0,0%,0%,0.46);
+    --popout-blur: 6px;
+    --popout-radius: 18px;
+    --popout-shadow: 0 20px 40px hsl(0,0%,0%,0.44);
+    --popout-shadow-border: inset 0 1px 1px hsl(0,100%,100%,0.35), inset 0 -1px 2px hsl(0,0%,0%,0.25), inset 0 0 0 1px hsl(0,100%,100%,0.04);
+
+	/* LIQUID GLASS SETTINGS */
+	--light-angle: 40deg;
+}
+
+/* --- Theme variables (central) --- */
+:root{
+  --app-bg: var(--selected-bg);
+  --accent-hue: 210;
+  --accent-saturation: 100%;
+  --accent-lightness: 70%;
+
+  /* apply transparency overrides set at top if present */
+  /* fallback to base values if not */
+  --sidebar-color: var(--sidebar-color, hsl(0,0%,0%,0.34));
+  --main-content-color: var(--main-content-color, hsl(0,0%,0%,0.27));
+  --card-color: var(--card-color, hsl(0,0%,100%,0.14));
+  --card-color-hover: var(--card-color-hover, hsl(0,0%,100%,0.18));
+  --card-color-select: var(--card-color-select, hsl(0,0%,100%,0.21));
+  --message-color: var(--message-color, hsl(0,0%,0%,0.19));
+  --popout-color: var(--popout-color, hsl(0,0%,0%,0.46));
+  --popout-blur: var(--popout-blur,6px);
+  --app-blur: var(--app-blur,6px);
+}
+
+/* === UI tweaks: remove heavy message bars and reduce shadows === */
+.theme-dark .messages .message-2qnXI6, .theme-dark .messageGroup-2CShn3 {
+  background: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+.theme-dark .container-1YxwTf, .theme-dark .chat-3bRxxu, .theme-dark .layout-3JcV2G {
+  background: transparent !important;
+}
+
+/* Make popouts / profile card more transparent */
+.theme-dark .popout-1r3X2h, .theme-dark .profile-3n3Qpq, .theme-dark .userPopout-3cQ4mM {
+  background: rgba(0,0,0,0.10) !important;
+  backdrop-filter: blur(var(--popout-blur)) !important;
+}
+
+/* Reduce sidebar (friends list) opacity */
+.theme-dark .sidebar-2K8pFh, .theme-dark .guilds-2JvJvR {
+  background: rgba(0,0,0,0.16) !important;
+}
+
+/* Reduce message card opacity */
+.theme-dark .containerCozy-1Dr8y4, .theme-dark .containerDefault-3hG6o3 {
+  background: rgba(255,255,255,0.02) !important;
+}
+
+/* Ensure text remains readable */
+.theme-dark .message-2qnXI6 .markup-2BOw-j, .theme-dark .message-2qnXI6 .header-2nL4v4 {
+  color: var(--text-primary, hsl(0,0%,100%)) !important;
+}
+
+/* End of 00-Borderlands.theme.css */
