@@ -1,0 +1,19 @@
+@import url("../Template/Translucence.css");
+
+:root {
+	
+	--app-bg: url("https://github.com/derrasierer/Discord-Hintergr-nde/blob/main/Pictures/Borderlands%20idk%20Cave.jpg");
+	
+	--app-blur: 5px;
+	
+	--accent-hue: 45;
+	--accent-saturation: 85%;
+	--accent-lightness: 55%;
+	
+	--sidebar-color: hsl(0,0%,0%,0.50);
+	
+	--main-content-color: hsl(0,0%,0%,0.40);
+	
+	--message-color: hsl(45,40%,10%,0.22);
+	
+}

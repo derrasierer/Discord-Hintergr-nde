@@ -1,0 +1,19 @@
+@import url("https://github.com/derrasierer/Discord-Hintergr-nde/blob/main/Template/Translucence.css");
+
+:root {
+	
+	--app-bg: url("https://github.com/derrasierer/Discord-Hintergr-nde/blob/main/Pictures/Borderlands%204%20Mond.jpg");
+	
+	--app-blur: 7px;
+	
+	--accent-hue: 220;
+	--accent-saturation: 90%;
+	--accent-lightness: 75%;
+	
+	--sidebar-color: hsl(220,30%,5%,0.48);
+	
+	--main-content-color: hsl(220,30%,5%,0.38);
+	
+	--message-color: hsl(220,50%,15%,0.22);
+	
+}
