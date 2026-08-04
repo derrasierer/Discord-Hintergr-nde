@@ -5,3 +5,20 @@
  */
 
 @import url("https://github.com/derrasierer/Discord-Hintergr-nde/blob/main/Themes/Borderlands3DesignedHead.css");
+
+/* Alternativen — beschriftete Raw-Links (einfügen am Ende von 00-Borderlands.theme.css) */
+/*
+--raw-designed-head:    "https://raw.githubusercontent.com/derrasierer/Discord-Hintergr-nde/main/Themes/Borderlands3DesignedHead.css";  Themes/Borderlands3DesignedHead.css 
+--raw-holding-head:     "https://raw.githubusercontent.com/derrasierer/Discord-Hintergr-nde/main/Themes/Borderlands3HoldingHead.css";  Themes/Borderlands3HoldingHead.css
+--raw-loadingscreen:    "https://raw.githubusercontent.com/derrasierer/Discord-Hintergr-nde/main/Themes/Borderlands3Loadingscreen.css";  Themes/Borderlands3Loadingscreen.css
+--raw-mond:             "https://raw.githubusercontent.com/derrasierer/Discord-Hintergr-nde/main/Themes/Borderlands4Mond.css";  Themes/Borderlands4Mond.css
+--raw-sirene:           "https://raw.githubusercontent.com/derrasierer/Discord-Hintergr-nde/main/Themes/Borderlands4Sirene.css";  Themes/Borderlands4Sirene.css
+--raw-cave:             "https://raw.githubusercontent.com/derrasierer/Discord-Hintergr-nde/main/Themes/BorderlandsCave.css";  Themes/BorderlandsCave.css
+*/
+
+/* Hinweis:
+   - Diese Variablen sind nur eine dokumentierte Sammlung der Raw-URLs.
+   - @import kann Variablen nicht in URL() verwenden, daher sind die Links hier zur Übersicht/Dokumentation.
+   - Wenn du eine bestimmte Datei importieren willst, benutze direkt:
+     @import url("https://raw.githubusercontent.com/derrasierer/.../Datei.css");
+*/
