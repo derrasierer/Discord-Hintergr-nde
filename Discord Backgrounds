@@ -1,3 +1,7 @@
-<NotepadPlus>
-    <Project name="Discord-Hintergründe" />
-</NotepadPlus>
+/**
+ * @name Borderlands Collection
+ * @version 1.0
+ * @description Borderlands Background Switcher
+ */
+
+@import url("https://raw.githubusercontent.com/derrasierer/discord-hintergrund/main/Themes/Borderlands3HoldingHead.css");
