@@ -1,4 +1,4 @@
-@import url("https://github.com/derrasierer/Discord-Hintergr-nde/blob/main/Template/Translucence.css");
+@import url("https://raw.githubusercontent.com/derrasierer/Discord-Hintergr-nde/main/Template/Translucence.css");
 
 :root {
 	
@@ -14,6 +14,6 @@
 	
 	--main-content-color: hsl(0,0%,0%,0.32);
 	
-	--message-color: hsl/210,50%,10%,0.20);
+	--message-color: hsl(210,50%,10%,0.20);
 	
 }
